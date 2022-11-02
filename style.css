@@ -1,7 +1,84 @@
 @font-face {
-  font-family: "GothicA1-Light";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2")
+  font-family: "MonoplexKR-Italic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Italic.woff2")
     format("woff2");
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  --size-border-radius: 4px;
+
+  --animation-duration: 300ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MonoplexKR-Italic", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-align: center;
+  color: var(--color-white);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: turquoise;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: bold;
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(—font-medium);
+  color: var(—color-black);
+  margin: 8px 0px;
+}
+
+h3 {
+  font-size: var(—font-regular);
+  color: var(—color-black);
+  margin: 8px 0px;
+}
+
+p {
+  font-size: var(—font-regular);
+  color: var(—color-black);
+  margin: 4px 0px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #e8adb3;
 }
